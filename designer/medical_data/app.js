@@ -1,9 +1,11 @@
 var express  = require("express"),
+    cors     = require("cors"),
     app      = express(),
     http     = require("http"),
     server   = http.createServer(app);
 
 app.configure(function () {
+    app.use(cors());
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
