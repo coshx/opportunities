@@ -1,6 +1,6 @@
 # Setup
 1. Install [`npm`](https://www.npmjs.com/get-npm)
-1. From this directory, run `npm -g install`
+1. From this directory, run `npm install`
 
 # Usage
 1. From this directory, run `node app.js` to start the server.
