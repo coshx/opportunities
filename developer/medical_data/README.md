@@ -1,7 +1,7 @@
 # Setup
 1. Clone this repository
 1. Switch to the `rails` branch
-1. Install `rvm` to get the right ruby version [https://rvm.io]
+1. Install `rvm` to get the right ruby version [https://rvm.io]()
 1. `cd ehr-api`
 1. `rvm install 2.3.1` and `rvm use 2.3.1`
 1. `gem install bundler`
