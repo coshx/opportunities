@@ -1,15 +1,16 @@
 # Setup
-1. Install [`npm`](https://www.npmjs.com/get-npm)
-1. From this directory, run `npm install`
+1. Install `rvm` (or `rbenv`) to get the right ruby version
+1. `cd ehr-api`
+1. `rvm install 2.3.1`
+1. `gem install bundler`
+1. `bundle install`
+1. `rake db:create`
+1. `rake db:migrate`
+1. `rake db:seed`
 
 # Usage
-1. From this directory, run `node app.js` to start the server.
-1. Now you can hit the two routes, `patients` and `visits`.
-
-# Examples
-* Get all patients: `curl localhost:3000/patients`
-* Get all patient visits: `curl localhost:3000/visits`
-* Get a single patient's visits: `curl localhost:3000/visits/[patient_id]`
+1. From this directory, run `rails server` to start the server.
+1. Now you can get patient data at `localhost:3000/patients` and visits data at `localhost:3000/patients/[patient_id]/visits/[visit_id]`
 
 # The Client
 ## Background
